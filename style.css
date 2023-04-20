@@ -1,0 +1,71 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text */
+}
+
+header {
+    background-color: maroon; /* Set header background to maroon */
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center header text */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px auto; /* Center main content */
+    text-align: center; /* Center main text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+
+/* Index Page Styles */
+
+header h1 {
+    margin-top: 0;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: none;
+}
+
+
+/* About Page Styles */
+
+main p:first-of-type {
+    margin-top: 0;
+}

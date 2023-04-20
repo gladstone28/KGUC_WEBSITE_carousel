@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+header {
+background-color: maroon;
+color: #fff;
+padding: 20px;
+text-align: center;
+display: flex; /* Add flexbox display /
+justify-content: center; / Center content horizontally /
+align-items: center; / Center content vertically */
+}
+
+
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+margin-right: 20px;
+}
+
+nav li a {
+color: #fff;
+text-decoration: none;
+}
+
+main {
+margin: 20px auto; /* Center everything /
+max-width: 960px; / Set a maximum width */
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+text-align: center;
+}
+
+/* Index Page Styles */
+header h1 {
+margin-top: 0;
+}
+
+main ul {
+list-style-type: none;
+}
+
+main li {
+margin-bottom: 10px;
+}
+
+iframe {
+border: none;
+}
+
+/* About Page Styles */
+main p:first-of-type {
+margin-top: 0;
+}
+
+/* Additions /
+body {
+background-color: #f5f5f5; / Use a light background color */
+}
+
+nav li a:hover { /* Add hover effect to navigation links */
+color: #333;
+background-color:#fff;
+border-radius:5px;
+padding-left:5px;
+padding-right:5px;
+}
+
+/* Carousel Styles */
+.carousel {
+width: 100%;
+height: 500px;
+position: relative;
+overflow: hidden;
+}
+
+.carousel-inner {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+.carousel-item {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+z-index: 1;
+transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+opacity: 1;
+z-index: 2;
+}
+
+.carousel-indicators {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.carousel-indicators li {
+display: inline-block;
+margin-right: 10px;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #fff;
+cursor: pointer;
+}
+
+.carousel-indicators li.active {
+background-color: maroon;
+}
+
+/* Media Queries */
+@media only screen and (max-width : 768px) {
+
+/* Modify styles for smaller screens here */
+
+}
+
+/* Carousel styles */
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel__item {
+  flex: 1 0 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Move carousel forward or backward */
+.carousel__item--prev {
+  transform: translateX(-100%);
+}
+
+.carousel__item--next {
+  transform: translateX(100%);
+}
+
+/* Move active carousel item to center */
+.carousel__item--active {
+  transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
